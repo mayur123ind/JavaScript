@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Addition of two numbers</title>
+	<script type="text/javascript">
+		function addition(){
+			var a,b;
+			a=parseInt(document.getElementById("fnum").value);
+			b=parseInt(document.getElementById("snum").value);
+
+			document.getElementById("answer").value=(a+b);
+		}
+	</script>
+</head>
+<body>
+<center>
+  *** Addion of number is ***<br><br>
+  Enter Number: <input type="text" id="fnum" placeholder="first number"><br>
+  Enter Number: <input type="text" id="snum" placeholder="second number"><br><br>
+  Answer: <input type="text" id="answer" ><br>
+  <input type="button" value="show answer" onclick="addition()">
+</center>
+</body>
+</html>

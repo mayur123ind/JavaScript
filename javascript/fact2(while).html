@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fsa</title>
+	<script type="text/javascript">
+		function fact() {
+			var num=parseInt(document.getElementById("num").value);
+			var fact=1;
+
+			while(num>1)
+			{
+				fact=fact*num;
+				num--;
+			}
+			document.write("Factorial no. is"+fact);
+		}
+	</script>
+</head>
+<body>
+<center>
+	<h1>Factorial no.</h1>
+	Enter the no.::<input type="text" id="num">
+	<input type="button" value ="answer" onclick="fact()">
+</center>
+</body>
+</html>

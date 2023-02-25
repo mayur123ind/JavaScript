@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function addit()
+		{
+			var a,b;
+				 a=parseInt(document.getElementById('fnum').value);
+				b=parseInt(document.getElementById('snum').value);
+				
+				if(a>b)
+					document.getElementById("answ").value=a;
+				else
+					document.getElementById("answ").value=b;
+		}
+	</script>
+</head>
+<body>
+Enter first no.
+<input type="text" id="fnum" ><br>
+enter 2nd no.:
+<input type="text" id="snum"><br>
+<input type="button" value="add" onclick="addit()">
+Ansswer:
+<input type="text" id="answ">
+
+</body>
+</html>

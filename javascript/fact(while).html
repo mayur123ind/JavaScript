@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function fact() {
+		var i=1;
+		var fact=1;
+		var num=parseInt(document.getElementById("num").value);
+
+		while(i<=num)
+		{
+			fact=fact*i;
+			i++;
+		}
+		document.write("factorial of number  is"+fact);
+	}
+</script>
+
+<center>
+	<h1>factorial of number </h1>
+	enter the no.::<input type="text" id="num">
+	<input type="button" value="show" onclick="fact()" >
+</center>
+</body>
+</html>

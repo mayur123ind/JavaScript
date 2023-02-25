@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function check(){
+		var a,b ;
+		a=parseInt(document.getElementById("fnum").value);
+		b=parseInt(document.getElementById("snum").value);
+		if(a<b)
+			
+		document.getElementById("answer").value=b;
+		else
+			document.getElementById("answer").value=a;
+	}
+	</script>
+<center>
+<p>check max no.</p>
+Enter first no. = <input type="text" id="fnum"><br>
+Enter second no. =<input type="text" id="snum"><br>
+<input type="button" value="check"  onclick="check()"><br>
+MAX number is::<input type="te" id="answer"></center>
+</body>
+</html>

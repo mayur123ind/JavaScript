@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function check(){
+
+		var num;
+		a=parseInt(document.getElementById("num").value);
+		if(num%2==0)
+			document.getElementById("answer").value="Even";
+		else
+			document.getElementById("answer").value="Odd";
+	}
+
+	</script>
+	<center>
+<p><b>Odd Even check</b></p>
+Enter the number:: <input type="text" id="num"><br>
+<input type="button" value="check" onclick="check()">
+<hr>
+show ans::<input type="text" id="answer">
+</center>
+</body>
+</html>

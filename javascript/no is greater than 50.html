@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function check() {
+		var a, b ;
+		b=50;
+		a=parseInt(document.getElementById("fnum").value);
+
+		if(a>50)
+			document.getElementById("answer").value= "value of a is greater than 50" ;
+		else
+		document.getElementById("answer").value= "value of a is not  greater than 50" ;
+	}
+	</script>
+<center>
+<p>check max no.</p>
+Enter first no. = <input type="text" id="fnum"><br>
+<input type="button" value="check"  onclick="check()"><br>
+greater number is::<input type="text" id="answer"></center>
+</body>
+</html>

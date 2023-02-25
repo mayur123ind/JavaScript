@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function interest(){
+		var p,n,r,count,si;
+		count=1;
+
+		p=parseInt(document.getElementById("pval").value);
+		n=parseInt(document.getElementById("nval").value);
+		r=parseInt(document.getElementById("rval").value);
+
+			si=parseInt(document.getElementById("sival").value=p*n*r/100);
+
+}
+
+	</script>
+</head>
+<body>
+<center>
+	<p><h1>calculate simple interest</h1></p>
+	enter the p::<input type="text" id="pval"><br>
+	enter the n::<input type="text" id="nval"><br>
+	enter the r::<input type="text"  id="rval"><br>
+	<input type="button" value="show" onclick="interest()"><br>
+	<hr>
+	si::<input type="text" id="sival">
+</center>
+</body>
+</html>

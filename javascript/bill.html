@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function bill(){
+		var Rate,Quantity,discount,total ;
+		Rate=parseInt(document.getElementById("rate").value);
+		Quantity=parseInt(document.getElementById("quan").value);
+		discount=parseInt(document.getElementById("dis").value);
+
+
+		if(0<discount)	
+		document.getElementById("answer").value=((Quantity*Rate)-(Quantity*Rate*discount/100));
+		else	
+		document.getElementById("answer").value=(Quantity*Rate);
+	}
+	</script>
+<center>
+<p><b>Bill amount.</b></p>
+product name::<input type="text"><br>
+Enter Rate = <input type="text" id="rate"><br>
+Enter Quantity=<input type="text" id="quan"><br>
+Enter discount=<input type="text" id="dis"><br>
+<input type="button" value="Bill"  onclick="bill()"><br><hr>
+Bill amount<input type="text" id="answer"></center>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	function digit() {
+		// body...
+		var n=parseInt(document.getElementById('num').value);
+		var r, sum=0;
+
+		while(n>0){
+			r=n%10;
+			sum=sum+r;
+			n=parseInt(n/10);
+		}
+		document.write("Addition of digits given number is"+sum);
+	}
+	
+</script>
+<center>
+	<h1>Addition of digits </h1>
+	enter the number::<input type="text" id="num">
+	<input type="button" value="answer" onclick="digit()" >
+</center>
+
+</body>
+</html>
